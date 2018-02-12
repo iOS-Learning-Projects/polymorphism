@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E86F20A21E804B050015B0C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E86F20A11E804B050015B0C5 /* main.m */; };
+		E86F20AA1E804B4F0015B0C5 /* Veiculo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86F20A91E804B4F0015B0C5 /* Veiculo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		E86F209E1E804B050015B0C5 /* Polimorfismo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Polimorfismo; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86F20A11E804B050015B0C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E86F20A81E804B4F0015B0C5 /* Polimorfismo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Polimorfismo-Bridging-Header.h"; sourceTree = "<group>"; };
+		E86F20A91E804B4F0015B0C5 /* Veiculo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Veiculo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,8 +44,10 @@
 		E86F20951E804B050015B0C5 = {
 			isa = PBXGroup;
 			children = (
+				E86F20A91E804B4F0015B0C5 /* Veiculo.swift */,
 				E86F20A01E804B050015B0C5 /* Polimorfismo */,
 				E86F209F1E804B050015B0C5 /* Products */,
+				E86F20A81E804B4F0015B0C5 /* Polimorfismo-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +99,7 @@
 					E86F209D1E804B050015B0C5 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 248SB9J68G;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -121,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E86F20A21E804B050015B0C5 /* main.m in Sources */,
+				E86F20AA1E804B4F0015B0C5 /* Veiculo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,16 +224,25 @@
 		E86F20A61E804B050015B0C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 248SB9J68G;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Polimorfismo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		E86F20A71E804B050015B0C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 248SB9J68G;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Polimorfismo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
